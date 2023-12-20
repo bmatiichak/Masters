@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">          
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp" />  
+    </definition>   
+    
+     	<!-- Registration Page  -->
+    <definition name="registration" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/registration.jsp" />  
+    </definition>  
+       
+         <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp" />  
+    </definition> 
+    
+     
+    <!-- User List View  -->
+    <definition name="userlist" extends="base.definition">  
+        <put-attribute name="title" value="User View List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/userlistview.jsp" />  
+    </definition> 
+     
+       
+         <!-- Class View  -->
+    <definition name="class" extends="base.definition">  
+        <put-attribute name="title" value="Class View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/st_class.jsp" />  
+    </definition> 
+    
+       
+         <!-- Class List View  -->
+    <definition name="classlist" extends="base.definition">  
+        <put-attribute name="title" value="Class List View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/st_classlistview.jsp" />  
+    </definition> 
+    
+        <!-- Assign Class View  -->
+    <definition name="assingclass" extends="base.definition">  
+        <put-attribute name="title" value="Assing Class" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/assingclassview.jsp" />  
+    </definition>
+    
+        <!-- Student List View  -->
+    <definition name="studentlist" extends="base.definition">  
+        <put-attribute name="title" value="Student List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/studentlistview.jsp" />  
+    </definition>
+    
+    
+           <!-- Faculty List View  -->
+    <definition name="facultylist" extends="base.definition">  
+        <put-attribute name="title" value="Faculty List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/facultylistview.jsp" />  
+    </definition>
+    
+    
+           <!-- Accountant List View  -->
+    <definition name="accountantlist" extends="base.definition">  
+        <put-attribute name="title" value="Accountant List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/accountantlistview.jsp" />  
+    </definition>
+    
+          <!-- Subject List View  -->
+    <definition name="subject" extends="base.definition">  
+        <put-attribute name="title" value="Subject List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/subjectview.jsp" />  
+    </definition>
+    
+    
+           <!-- Subject List View  -->
+    <definition name="subjectlist" extends="base.definition">  
+        <put-attribute name="title" value="Subject List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/subjectlistview.jsp" />  
+    </definition>
+    
+    
+            <!-- Attendance View  -->
+    <definition name="attendance" extends="base.definition">  
+        <put-attribute name="title" value="Attendance" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/attendanceview.jsp" />  
+    </definition>
+    
+        <!-- Attendance List View  -->
+    <definition name="attendancelist" extends="base.definition">  
+        <put-attribute name="title" value="Attendance List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/attendancelistview.jsp" />  
+    </definition>
+    
+               <!-- Fee View  -->
+    <definition name="fee" extends="base.definition">  
+        <put-attribute name="title" value="Fee" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/feeview.jsp" />  
+    </definition>
+    
+        <!-- Fee List View  -->
+    <definition name="feelist" extends="base.definition">  
+        <put-attribute name="title" value="Fee List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/feelistview.jsp" />  
+    </definition>
+        
+                  <!-- Marksheet View  -->
+    <definition name="marksheet" extends="base.definition">  
+        <put-attribute name="title" value="Marksheet" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/marksheetview.jsp" />  
+    </definition>
+    
+        <!-- Marksheet List View  -->
+    <definition name="marksheetlist" extends="base.definition">  
+        <put-attribute name="title" value="Marksheet List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/marksheetlistview.jsp" />  
+    </definition>
+    
+      <!-- Marksheet List View  -->
+    <definition name="subjectmark" extends="base.definition">  
+        <put-attribute name="title" value="subjectmark List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/subjectmark.jsp" />  
+    </definition>
+    
+         <!--Success View  -->
+    <definition name="successmsg" extends="base.definition">  
+        <put-attribute name="title" value="successmsg" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/successmsg.jsp" />  
+    </definition>
+    
+        <!--Success View  -->
+    <definition name="getmarksheet" extends="base.definition">  
+        <put-attribute name="title" value="getmarksheet" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/getmarksheet.jsp" />  
+    </definition>
+    
+    
+   
+</tiles-definitions> 
